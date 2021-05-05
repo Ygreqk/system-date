@@ -20,7 +20,7 @@
 		var minutes = today.getMinutes();
 		if(minutes<10) hours = "0"+minutes;
 		var seconds = today.getSeconds();
-		if(seconds<10) hours = "0"+seconds;
+		if(seconds<10) seconds = "0"+seconds;
 		document.getElementById("div").innerHTML = 
 			`${day}/${month}/${year} | ${hours}:${minutes}:${seconds}`;
 		
